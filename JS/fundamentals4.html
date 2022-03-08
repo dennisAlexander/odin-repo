@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="admitted"></div>
+
+    <div class="refused"></div>
+    
+
+
+    <script>
+
+const people = ['Chris', 'Anne', 'Colin', 'Terri', 'Phil', 'Lola', 'Sam', 'Kay', 'Bruce'];
+
+const admitted = document.querySelector('.admitted');
+const refused = document.querySelector('.refused');
+admitted.textContent = 'Admit: ';
+refused.textContent = 'Refuse: '
+
+// let i = 0;
+
+// for(i; i < people.length -1; i++){
+//     if(people[i] == 'Phil' || people[i] == 'Lola' ){
+//         refused.textContent += people[i] + ", ";
+//     }else{
+//        admitted.textContent += people[i] + ", ";
+
+//     }
+// }
+
+// refused.textContent += ;
+//  admitted.textContent += ;
+
+//2 to 10 
+
+// for(let i = 2; i <= 10; i++){
+//     if(i%2 === 0){
+//         console.log(i);
+//     }
+// }
+
+//change to while loop
+
+// for (let i = 0; i < 3; i++) {
+//   alert( `number ${i}!` );
+// }
+
+// let i = 0;
+
+// while(i < 3) {
+//    let num = i++;
+//    console.log(`number: ${num}!`);
+// }
+
+// repeat until the input is correct
+
+// let answer = prompt("Enter a number greater than 100:");
+
+// while(answer <= 100){
+//     prompt("Enter a number greater than 100:");
+// }
+
+//   correct answer
+
+// let num;
+
+// do{
+//     num = prompt("Enter a number greater than 100:");
+// } while (num <= 100 && num);
+
+// The loop do..while repeats while both checks are truthy:
+
+// The check for num <= 100 – that is, the entered value is still not greater than 100.
+// The check && num is false when num is null or an empty string. Then the while loop stops too.
+// P.S. If num is null then num <= 100 is true, so without the 2nd check the loop wouldn’t stop if the user clicks CANCEL. Both checks are required.
+
+// output a prime
+
+let n = 10;
+
+nextPrime:
+for(let i = 2; i <= n; i++){ //for each i
+    for(let j = 2; j < i; j++) {  // look for divisor
+if(i % j === 0) continue nextPrime;  // not a prime, go to next i
+    }
+
+    console.log(i);  // prime
+}
+
+    </script>
+</body>
+</html>

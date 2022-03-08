@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+    <div id="date"></div>
+    <img src="" id="myImg">
+
+    </div>
+
+    <script>
+    const parent = document.querySelector(".container");
+    const date = document.getElementById("date");
+    const para1 = document.createElement("p")
+   
+
+   // display time with message
+
+    para1.textContent = 'This is the time, right now!';
+    parent.appendChild(para1)
+
+    date = document.write(Date.now()).innerHTML;
+    container.appendChild(date);
+
+    var Xmas95 = new Date('December 25, 1995 23:15:30');
+    var weekday = Xmas95.getDay();
+    document.write(weekday)
+   
+    var options = { weekday: 'long'};
+    console.log(new Intl.DateTimeFormat('en-US', options).format(Xmas95));
+    // Monday
+    console.log(new Intl.DateTimeFormat('de-DE', options).format(Xmas95));
+    // Montag
+    
+
+    
+    </script>
+</body>
+</html>
