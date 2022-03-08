@@ -14,11 +14,16 @@ main {
 img {
   display: flex;
   width: 600px;
-  height: 450px;
+  height: auto;
   margin: 12px;
 }
 
 .header > span {
+  margin: 10px;
+  padding: 5px;
+}
+
+.header > a {
   margin: 10px;
   padding: 5px;
 }
